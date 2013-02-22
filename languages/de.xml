@@ -3,4 +3,42 @@
 	<category name="wcf.bbcode">
 		<item name="wcf.bbcode.usk.title"><![CDATA[USK-Bewertung einfügen]]></item>
 	</category>
+	<category name="wcf.help.item">
+		<item name="wcf.help.item.message.bbcode.usk"><![CDATA[USK Kennzeichnung]]></item>
+		<item name="wcf.help.item.message.bbcode.usk.description"><![CDATA[<p>Mittels der BBCodes lassen sich USK (Unterhaltungsoftware Selbstkontrolle)-Logos in einen Text bzw. Beitrag einfügen. Im Nachfolgenden wird erklärt, wie dies geschieht.<br />
+Die USK-Logos bieten sich zur visuellen und eindeutigen Hervorhebung all jener Inhalte an, die aufgrund gesetzlicher Bestimmungen eine eindeutige Kennzeichnung besitzen müssen. Mit ihnen lässt sich also bspw. zeigen, ob ein Computerspiel auch von einem 16-jährigen Spieler gespielt werden darf oder dieser 18 Jahre alt sein muss.</p> 
+<p>Diese sind SVG-Dateien, die aufgrund ihrer Beschaffenheit nach eigenem Belieben skaliert werden können. Dabei entstehen keinerlei optische und/oder qualitative Unterschiede und die Nutzung bzw. Bearbeitung ist sehr einfach zu bewerkstelligen.</p> 
+
+<p>Mit der Angabe von <code>$alter</code> lässt sich eine der fünf definierten Altersangaben wählen. Diese wären: 0, 6, 12, 16 oder 18 Jahre.</p> 
+
+<p>Durch Verwendung von <code>$größe</code> lässt sich der gewünschte Pixelwert einstellen. Dieser kann in einem Rahmen von 10-999 Pixel(n) liegen. Als Beispiel sieht man hier die Darstellung in der Größe 128px:<br />
+<img style="width: 128px;" src="wcf/images/usk/usk_6.svg"></p>
+
+<p>Wird kein spezifischer Wert eingestellt, wird automatisch der standardisierte Wert von 64x64 Pixeln genommen und angezeigt. Dies sieht wie folgt aus:<br />
+<img style="width: 64px;" src="wcf/images/usk/usk_6.svg"></p>
+
+<h4 style="clear: left; padding-top: 20px;">Die Syntax - Grundaufbau</h4>
+<p>Die grundlegende Syntax der USK-BBCodes ist wie folgt zusammengestellt:<br />
+<code>[usk(='$alter')(,'$größe')]$alter[/usk]</code><br />
+
+Die Eigenschaft $alter innerhalb des BBCodes ist verpflichtend. Wird kein Alter angegeben, wird der BBCode nicht ausgeführt.<br />
+Es gibt zwei Möglichkeiten, das Alter zu definieren:<br />
+<code>[usk]$alter[/usk]</code><br />
+oder
+<code>[usk='$alter'][/usk]</code><br /><br />
+
+Wenn man zusätzlich eine Größe definieren will, muss immer die 2. Schreibweise gewählt werden:<br />
+<code>[usk='$alter','$größe'][/usk]</code></p>
+
+<h4 style="clear: left; padding-top: 20px;">Beispiele:</h4>
+<p><code>[usk]0[/usk]</code><br />
+<img style="width: 64px;" src="wcf/images/usk/usk_0.svg"><br /><br />
+
+<code>[usk='0'][/usk]</code><br />
+<img style="width: 64px;" src="wcf/images/usk/usk_0.svg"><br /><br />
+
+<code>[usk='0','128'][/usk]</code><br />
+<img style="width: 128px;" src="wcf/images/usk/usk_0.svg"></p>
+]]></item>
+	</category>
 </language>

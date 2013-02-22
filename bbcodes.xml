@@ -7,11 +7,12 @@
 			<attributes>
 				<attribute name="0">
 					<required>1</required>
+					<usetext>1</usetext> 
 					<validationpattern><![CDATA[^(0|6|12|16|18)$]]></validationpattern>
 				</attribute>
 				<attribute name="1">
 					<required>0</required>
-					<validationpattern><![CDATA[^[1-9]?[0-9]$]]></validationpattern>
+					<validationpattern><![CDATA[^[1-9]{2,3}$]]></validationpattern>
 				</attribute>
 			</attributes>
 			<wysiwygicon>uskM.png</wysiwygicon>

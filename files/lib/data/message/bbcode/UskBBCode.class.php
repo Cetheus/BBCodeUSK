@@ -27,6 +27,7 @@ class UskBBCode implements BBCode {
 		if (isset($openingTag['attributes'][0])) $age = $openingTag['attributes'][0];
 		if (isset($openingTag['attributes'][1])) $size = $openingTag['attributes'][1];
 		
+		
 		// display BBCode
 		if ($parser->getOutputType() == 'text/html') {
 			$output = '<img src="'.RELATIVE_WCF_DIR.'images/usk/usk_'.$age.'.svg" style="width: '.$size.'px;" />'; // USK Age Rating		

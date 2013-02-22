@@ -3,4 +3,44 @@
 	<category name="wcf.bbcode">
 		<item name="wcf.bbcode.usk.title"><![CDATA[Insert USK Rating]]></item>
 	</category>
+	<category name="wcf.help.item">
+		<item name="wcf.help.item.message.bbcode.usk"><![CDATA[USK Kennzeichnung]]></item>
+		<item name="wcf.help.item.message.bbcode.usk.description"><![CDATA[
+		<p>By applying BBcodes, USK (Entertainment software self-control) logos can be added within a text respectively thread. 
+		The way this works will be explained in the following.<br />
+The USK logos serve for a visual and explicit highlighting of all those contents, needing a clear marking due to legal requirements. 
+Accordingly, by applying them one can show e.g. whether a computergame is also allowed to be played by a 16-year-old player or if s/he has to be 18 to do so.</p>
+
+<p>These are SVG-data, which can be individually scaled due to their structure. 
+By doing so, no optic and/or qualitative differences occur and using respectively editing them can be easily managed.</p>
+
+<p>By inserting <code>$age</code> one of the five defined age statements can be chosen. These are: 0, 6, 12, 16 or 18 years.</p>
+
+<p>By inserting<code>$size</code> the wished for pixel number can be adjusted. 
+It can lay within the range of 10-999 pixel(s). Here is an example displayed in the size of 128px:<br />
+<img style="width: 128px;" src="wcf/images/usk/usk_6.svg"></p>
+
+<p>If the size is not specified, the standard size of 64x64 pixels will be automatically chosen and displayed. It looks like this:<br />
+<img style="width: 64px;" src="wcf/images/usk/usk_6.svg"></p>
+
+<h4 style="clear: left; padding-top: 20px;">The Syntax - Basic Structure</h4>
+<p>The USK-BBcodes basic structure is composed like this:<br />
+<code>[usk(='$age')(,'$size')]$age[/usk]</code><br />
+The feature of $age within the BBcodes is obligatory. If no age is inserted, the BBcode will not be displayed.<br />
+There are two options to define the age:<br />
+<code>[usk]$age[/usk]</code><br />
+or
+<code>[usk='$age'][/usk]</code><br /><br />
+If you want to define an additional size, you do always have to use the second type of structure:<br />
+<code>[usk='$age','$size'][/usk]</code></p>
+
+<h4 style="clear: left; padding-top: 20px;">Examples:</h4>
+<p><code>[usk]0[/usk]</code><br />
+<img style="width: 64px;" src="wcf/images/usk/usk_0.svg"><br /><br />
+<code>[usk='0'][/usk]</code><br />
+<img style="width: 64px;" src="wcf/images/usk/usk_0.svg"><br /><br />
+<code>[usk='0','128'][/usk]</code><br />
+<img style="width: 128px;" src="wcf/images/usk/usk_0.svg"></p>
+]]></item>
+	</category>
 </language>
